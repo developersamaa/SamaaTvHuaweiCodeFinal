@@ -1,0 +1,606 @@
+<RelativeLayout
+    android:id="@+id/parent_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/blog_ad_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"/>
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/rec_blog"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/recblog_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="RECENT"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/recblog_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="BLOG"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="0dp"
+                    card_view:cardElevation="3dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/white"
+                        >
+
+                        <FrameLayout
+                            android:id="@+id/Framelayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/img_recblogs"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/logo_samaatv"/>
+
+                            <ImageView
+                                android:id="@+id/play_vdo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="false"
+                                android:src="@drawable/play_button"
+
+                                />
+
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/title_recblog"
+                            style="@style/Base.TextAppearance.AppCompat.Headline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Framelayout"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:maxLines="2"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:paddingRight="@dimen/activity_horizontal_margin"
+                            android:text="TITLE"
+                            android:textColor="@android:color/black"/>
+
+                        <ImageView
+                            android:id="@+id/time_icon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignTop="@+id/date_recblog"
+                            android:layout_gravity="center_vertical"
+
+                            android:layout_marginLeft="10dp"
+                            android:contentDescription="news"
+                            android:src="@drawable/time"/>
+
+
+                        <TextView
+                            android:id="@+id/date_recblog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title_recblog"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:paddingRight="@dimen/activity_horizontal_margin"
+                            android:text="date"
+                            android:textSize="@dimen/font_body"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="gone"/>
+
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/top_blogs"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/topblogs_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="TOP"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/topblogs_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="BLOGS"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_topblogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/blog_ad_below"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"/>
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/pic_blogs"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/picblogs_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="PIC"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/picblogs_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="BLOGS"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_picblogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/power_games"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/power_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="POWER"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/power_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="GAMES"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+                <!--  Recycler View  -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_powergames"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <!--<TextView-->
+                <!--android:id="@+id/more_powergames"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textSize="@dimen/font_body"-->
+                <!--android:text="MORE FROM POWER GAMES"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="@color/blue"-->
+                <!--android:layout_marginBottom="15dp" />-->
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/video_blogs"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/videoblogs_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="VIDEO"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/videoblogs_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="BLOGS"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_videoblogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    />
+
+
+                <!--<com.google.android.gms.ads.doubleclick.PublisherAdView-->
+                <!--android:id="@+id/ad_view1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--ads:adSize="MEDIUM_RECTANGLE"-->
+                <!--ads:adUnitId="@string/blogs_en_mrec2"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--/>-->
+
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/social_pulse"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/socialpulse_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="SOCIAL"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/socialpulse_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="PULSE"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+                <!--  Recycler View  -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_socialpulse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <!--<TextView-->
+                <!--android:id="@+id/more_socialpulse"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+
+
+                <!--android:gravity="center_vertical"-->
+                <!--android:textSize="@dimen/font_body"-->
+                <!--android:text="MORE FROM SOCIAL PULSE"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="@color/blue"-->
+                <!--android:layout_marginBottom="15dp" />-->
+
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/glitz_glams"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/glitzglams_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="GLITZ AND"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/glitzglams_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="GLAMS"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+                <!--  Recycler View  -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_glitzglams"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <!--<TextView-->
+                <!--android:id="@+id/more_glitzglams"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textSize="@dimen/font_body"-->
+                <!--android:text="MORE FROM GLITZ AND GLAMS"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="@color/blue"-->
+                <!--android:layout_marginBottom="15dp" />-->
+
+
+                <!--<com.google.android.gms.ads.doubleclick.PublisherAdView-->
+                <!--android:id="@+id/ad_view2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--ads:adSize="MEDIUM_RECTANGLE"-->
+                <!--ads:adUnitId="@string/blogs_en_mrec3"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--/>-->
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/food_shood"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/foodshood_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="FOOD"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/foodshood_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="SHOOD"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+                <!--  Recycler View  -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_foodshood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <!--<TextView-->
+                <!--android:id="@+id/more_foodshood"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textSize="@dimen/font_body"-->
+                <!--android:text="MORE FROM FOOD SHOOD"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="@color/blue"-->
+                <!--android:layout_marginBottom="15dp" />-->
+
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/sports_blogs"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/sportsblogs_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="SPORTS"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/sportsblogs_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="BLOGS"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+                <!--  Recycler View  -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_sportsblogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <!--<TextView-->
+                <!--android:id="@+id/more_sportsblogs"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textSize="@dimen/font_body"-->
+                <!--android:text="MORE FROM SPORTS BLOGS"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="@color/blue"-->
+                <!--android:layout_marginBottom="15dp" />-->
+
+                <FrameLayout
+                    android:id="@+id/footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/appfooter_color"
+                    >
+
+                    <TextView
+                        android:id="@+id/footer_head1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|top"
+                        android:layout_marginBottom="2dp"
+                        android:text="@string/copyright_samaatv"
+                        android:textColor="@color/White"
+                        android:textSize="12sp"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

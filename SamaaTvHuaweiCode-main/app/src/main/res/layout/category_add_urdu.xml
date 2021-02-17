@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/pak_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Add Topic"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                <TextView
+                    android:id="@+id/pak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="پاکستان نیوز"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/customview"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#5F9EA0"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/glo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="بین الاقوامی نیوز"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Switch
+                    android:id="@+id/glo_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="5dp"
+                    android:text="Add Topic"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/customview1"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#5F9EA0"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/eco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="معیشت نیوز"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Switch
+                    android:id="@+id/eco_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="5dp"
+                    android:text="Add Topic"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/customview2"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#5F9EA0"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/spo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="کھیل نیوز"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Switch
+                    android:id="@+id/spo_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="5dp"
+                    android:text="Add Topic"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/customview3"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#5F9EA0"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="اینٹرٹینمنٹ نیوز"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Switch
+                    android:id="@+id/enter_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="5dp"
+                    android:text="Add Topic"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/customview4"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#5F9EA0"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/editor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="ایڈیٹر کی نظر میں"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Switch
+                    android:id="@+id/edit_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="5dp"
+
+                    android:text="Add Topic"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/customview5"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#5F9EA0"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="صحت نیوز"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Switch
+                    android:id="@+id/health_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="5dp"
+
+                    android:text="Add Topic"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/customview6"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#5F9EA0"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/life"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="لائف اسٹائل نیوز"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Switch
+                    android:id="@+id/life_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="5dp"
+                    android:text="Add Topic"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/customview7"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#5F9EA0"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/social"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="سوشل نیوز"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Switch
+                    android:id="@+id/social_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="5dp"
+                    android:text="Add Topic"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/customview8"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#5F9EA0"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/scitech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="ٹیکنا لوجی نیوز"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Switch
+                    android:id="@+id/sci_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="5dp"
+                    android:text="Add Topic"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/customview9"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#5F9EA0"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/weird"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="دلچسپ و اجیب نیوز"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Switch
+                    android:id="@+id/weird_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="5dp"
+                    android:text="Add Topic"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/customview10"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#5F9EA0"
+                />
+
+            <com.google.android.gms.ads.doubleclick.PublisherAdView
+                android:id="@+id/ad_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                ads:adSize="MEDIUM_RECTANGLE"
+                ads:adUnitId="@string/medium_rect"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

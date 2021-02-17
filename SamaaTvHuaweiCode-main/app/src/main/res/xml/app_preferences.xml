@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none">
+
+    <androidx.preference.PreferenceCategory
+        android:title="Sounds">
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="startup_sound"
+            android:summary="Sound when app starts"
+            android:title="Startup Sound"/>
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="audible_alert"
+            android:summary="Sound for breaking news notification"
+            android:title="Notification Sound"/>
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="Notifications">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="push_noti"
+            android:summary="Notification for breaking news"
+            android:title="Notification Alert"/>
+
+    </androidx.preference.PreferenceCategory>
+
+
+    <androidx.preference.PreferenceCategory
+        android:title="Choose Language">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="english"
+            android:summary="English"
+            android:title="English Language"/>
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="urdu"
+            android:summary="Urdu"
+            android:title="Urdu Language"/>
+    </androidx.preference.PreferenceCategory>
+
+
+    <androidx.preference.PreferenceCategory android:title="sdt@samaa.tv">
+
+        <Preference
+            android:key="rateus"
+            android:summary="User friendly App with Live Stream , Pakistan/Worl news and much more"
+            android:title="About">
+        </Preference>
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory android:title="Version">
+
+        <Preference
+            android:key="samaatv"
+            android:summary="v4.4.0"
+            android:title=" ">
+        </Preference>
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

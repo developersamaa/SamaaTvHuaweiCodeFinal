@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/more_list_lyout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_health"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#112A6F"
+        android:gravity="center"
+        android:text="Health"
+        android:textColor="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btn_life"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#112A6F"
+        android:gravity="center"
+        android:text="Life Style"
+        android:textColor="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btn_social"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#112A6F"
+        android:gravity="center"
+        android:text="Social Buzz"
+        android:textColor="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btn_sci"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#112A6F"
+        android:gravity="center"
+        android:text="Science"
+        android:textColor="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btn_weird"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#112A6F"
+        android:gravity="center"
+        android:text="Weird"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.Samaatv.samaaapp3"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 44
+        versionName "4.4.0"
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('keystore.jks')
+            keyAlias 'HuaweiKey'
+            keyPassword 'Android123'
+            storePassword 'Android123'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+            debuggable true
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'jsr305_annotations/Jsr305_annotations.gwt.xml'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+    configurations {
+        all*.exclude module: 'support-v4' // This removes all other versions of `support-v4` if gets duplicated from all the artifacts.
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+    implementation 'com.google.android.gms:play-services-ads:19.5.0'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+//    implementation 'com.google.android.gms:play-services-analytics:17.0.0'
+    implementation 'com.google.ads.interactivemedia.v3:interactivemedia:3.21.0'
+    implementation 'com.googlecode.json-simple:json-simple:1.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'androidx.legacy:legacy-preference-v14:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.google.firebase:firebase-core:18.0.0'
+    implementation 'com.google.firebase:firebase-messaging:21.0.0'
+    implementation 'com.google.firebase:firebase-ads:19.5.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.hudomju:swipe-to-dismiss-undo:1.0'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.facebook.android:facebook-android-sdk:4.22.1'
+    implementation files('libs/GoogleConversionTrackingSdk-2.2.4.jar')
+
+    implementation 'fm.jiecao:jiecaovideoplayer:5.5.4'
+    implementation 'com.devbrackets.android:exomedia:4.0.2'
+
+    implementation 'net.protyposis.android.mediaplayer:mediaplayer:4.3.0'
+    implementation 'net.protyposis.android.mediaplayer:mediaplayer-dash:4.3.0'
+
+    implementation 'com.taboola:android-sdk:2.0.27'
+
+    // include to have clicks open in chrome tabs rather than in a default browser (mandatory)
+    implementation 'androidx.browser:browser:1.2.0'
+
+    // Huawei Libs
+    implementation 'com.huawei.hms:hianalytics:5.0.3.300'
+}
+
+//configurations.all {
+//    resolutionStrategy.eachDependency { details ->
+//        def requested = details.requested
+//        if (requested.group == 'com.android.support') {
+//            if (!requested.name.startsWith("multidex")) {
+//                details.useVersion '25.0.1'
+//            }
+//        }
+//    }
+//}
+// ADD THIS AT THE BOTTOM
+apply plugin: 'com.huawei.agconnect'
+apply plugin: 'com.google.gms.google-services'

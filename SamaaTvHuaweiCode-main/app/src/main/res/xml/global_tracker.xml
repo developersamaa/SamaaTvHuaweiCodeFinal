@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="TypographyDashes">
+
+    <!-- the Local LogLevel for Analytics -->
+    <string name="ga_logLevel">verbose</string>
+
+    <!-- how often the dispatcher should fire -->
+    <integer name="ga_dispatchPeriod">30</integer>
+
+    <!-- Treat events as test events and don't send to google -->
+    <bool name="ga_dryRun">false</bool>
+
+    <screenName name="samaaapp3_new.samaatv.com.newappsamaatv.MainActivity">Main Activity English</screenName>
+    <screenName name="samaaapp3_new.samaatv.com.newappsamaatv.MainActivityUrdu">Main Activity Urdu</screenName>
+    <screenName name="samaaapp3_new.samaatv.com.newappsamaatv.Category_Add">Category Add Screen English</screenName>
+    <screenName name="samaaapp3_new.samaatv.com.newappsamaatv.Category_Add_Urdu">Category Add Screen Urdu</screenName>
+    <screenName name="samaaapp3_new.samaatv.com.newappsamaatv.Detail_Activity">Detail Screen English</screenName>
+    <screenName name="samaaapp3_new.samaatv.com.newappsamaatv.Detail_Activity_Urdu">Detail Screen Urdu</screenName>
+    <screenName name="samaaapp3_new.samaatv.com.newappsamaatv.Detail_Activity_Editors">Detail Screen Editors English</screenName>
+    <screenName name="samaaapp3_new.samaatv.com.newappsamaatv.Detail_Activity_Editors_Urdu">Detail Screen Editors Urdu</screenName>
+    <screenName name="samaaapp3_new.samaatv.com.newappsamaatv.Detail_Activity_MoreBlogs">Detail Screen More News English</screenName>
+    <screenName name="samaaapp3_new.samaatv.com.newappsamaatv.Detail_Activity_MoreBlogsUrdu">Detail Screen More News Urdu</screenName>
+    <screenName name="samaaapp3_new.samaatv.com.newappsamaatv.Detail_Activity_TvShows">Detail Screen Tv Shows</screenName>
+    <screenName name="samaaapp3_new.samaatv.com.newappsamaatv.SettingsActivity">Setting Panel</screenName>
+</resources>

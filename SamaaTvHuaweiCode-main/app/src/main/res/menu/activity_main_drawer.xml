@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  <item
+          android:id="@+id/nav_camera"
+          android:icon="@drawable/ic_menu_camera"
+          android:title="Import" />-->
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_live"
+
+            android:title="Live"
+
+            />
+        <item
+            android:id="@+id/nav_trend"
+
+            android:title="Home"
+
+            />
+        <item
+            android:id="@+id/nav_mynews"
+
+            android:title="My News"
+
+            />
+        <item
+            android:id="@+id/nav_pak"
+
+            android:title="Pakistan"
+
+            />
+
+        <item
+            android:id="@+id/nav_glo"
+
+            android:title="Global"/>
+        <item
+            android:id="@+id/nav_eco"
+
+            android:title="Economy"/>
+        <item
+            android:id="@+id/nav_sport"
+
+            android:title="Sports"/>
+        <item
+            android:id="@+id/nav_enter"
+
+            android:title="Entertainment"/>
+        <item
+            android:id="@+id/nav_editor"
+
+            android:title="Editor's Choice"/>
+
+        <item
+            android:id="@+id/nav_tvshows"
+
+            android:title="TV Shows"/>
+
+        <item
+            android:id="@+id/nav_blog"
+
+            android:title="Blogs"/>
+
+        <item
+            android:id="@+id/nav_more"
+
+            android:title="More"/>
+    </group>
+
+    <item android:title="App's Settings">
+        <menu>
+
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@android:drawable/ic_menu_preferences"
+                android:title="Settings"/>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share App"/>
+        </menu>
+    </item>
+
+</menu>

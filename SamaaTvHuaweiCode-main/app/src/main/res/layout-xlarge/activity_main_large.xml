@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@+id/drawer_layout"
+                                        xmlns:android="http://schemas.android.com/apk/res/android"
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        xmlns:tools="http://schemas.android.com/tools"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fitsSystemWindows="true"
+                                        tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main_large"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="350dp"
+        android:fitsSystemWindows="false"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:theme="@style/NavLAyoutStyle">
+
+        <!--<include layout="@layout/nav_header_drawer_"/>-->
+
+        <RelativeLayout
+            android:id="@+id/RlMainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+
+            <include layout="@layout/nav_header_main" android:id="@+id/NavHeaderLayout"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RvNavItems"
+                android:layout_below="@+id/NavHeaderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                tools:listitem="@layout/nav_row_item"
+                />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

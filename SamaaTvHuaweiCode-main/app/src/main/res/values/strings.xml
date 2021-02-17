@@ -1,0 +1,282 @@
+<resources>
+    <string name="app_name">SamaaNewsApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="copyright_samaatv">Copyright © 2020 SAMAA TV. All Rights Reserved.</string>
+
+    <string name="loading_video">Loading Live Streaming…</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="medium_rect">/14309701/App8</string>
+
+    <string name="ad_unit_id_1">/14309701/app1</string>
+    <string name="ad_unit_id_2">/14309701/app2</string>
+
+
+    <string name="exit_english">Press back again to quit.</string>
+    <string name="exit_urdu">دوبارہ بیک کا بٹن دباکے باہر نکلیں۔</string>
+    <string name="lang_choose">"Please choose the language \n برائے مہربانی زبان کا انتخاب کریں"</string>
+    <string name="eng_subscribed">Subscribed to English News</string>
+    <string name="urdu_subscribed">Subscribed to Urdu News</string>
+    <string name="unsubscribed">Unsubscribed to All News</string>
+    <string name="deleted">Deleted</string>
+    <string name="undo">UNDO</string>
+
+    <string name="view_example">JWPlayerView Example</string>
+    <string name="media_route_menu_title">Cast</string>
+
+    <string name="fragment_example">JWPlayerFragment Example</string>
+
+    <string name="ad_unit_id_4">/14309701/app4</string>
+    <!--<string name="ad_unit_id_4">/14309701/and-ur/home/and-ur.home.lb-atf</string>-->
+
+
+    <!-- Ad units for English News -->
+
+
+    <!-- Ad units for English and Urdu Interstitial -->
+    <string name="interstitial_unit_id_eng">/14309701/and-en/and-en.interstitial</string>
+
+    <!-- Ad units for English Live Page -->
+    <string name="live_en_mrec1">/14309701/and-en/live/and-en.live.mrec-1</string>
+    <string name="live_en_mrec2">/14309701/and-en/live/and-en.live.mrec-2</string>
+    <string name="live_en_mrec3">/14309701/and-en/live/and-en.live.mrec-3</string>
+    <!--Ends here -->
+
+    <!-- Ad units for English Home Page -->
+    <string name="home_en_lb_atf">/14309701/app4</string>
+    <string name="home_en_mrec1">/14309701/and-en/home/and-en.home.mrec-1</string>
+    <string name="home_en_mrec2">/14309701/and-en/home/and-en.home.mrec-2</string>
+    <string name="home_en_mrec3">/14309701/and-en/home/and-en.home.mrec-3</string>
+    <!--Ends here -->
+
+    <!-- Ad units for English MyNews Page -->
+    <string name="mynews_en_mrec1">/14309701/and-en/mynews/and-en.mynews.mrec-1</string>
+    <string name="mynews_en_mrec2">/14309701/and-en/mynews/and-en.mynews.mrec-2</string>
+    <string name="mynews_en_mrec3">/14309701/and-en/mynews/and-en.mynews.mrec-3</string>
+    <string name="mynews_en_mrec4">/14309701/and-en/mynews/and-en.mynews.mrec-4</string>
+    <!--Ends here -->
+
+    <!-- Ad units for English Pakistan Page -->
+    <string name="pak_en_mrec1">/14309701/and-en/pakistan/and-en.pakistan.mrec-1</string>
+    <string name="pak_en_mrec2">/14309701/and-en/pakistan/and-en.pakistan.mrec-2</string>
+    <string name="pak_en_mrec3">/14309701/and-en/pakistan/and-en.pakistan.mrec-3</string>
+    <string name="pak_en_mrec4">/14309701/and-en/pakistan/and-en.pakistan.mrec-4</string>
+    <string name="pak_en_mrec5">/14309701/and-en/pakistan/and-en.pakistan.mrec-5</string>
+    <string name="pak_en_mrec6">/14309701/and-en/pakistan/and-en.pakistan.mrec-6</string>
+    <string name="pak_en_mrec7">/14309701/and-en/pakistan/and-en.pakistan.mrec-7</string>
+    <!--Ends here -->
+
+    <!-- Ad units for English Global Page -->
+    <string name="glo_en_mrec1">/14309701/and-en/global/and-en.global.mrec-1</string>
+    <string name="glo_en_mrec2">/14309701/and-en/global/and-en.global.mrec-2</string>
+    <string name="glo_en_mrec3">/14309701/and-en/global/and-en.global.mrec-3</string>
+    <string name="glo_en_mrec4">/14309701/and-en/global/and-en.global.mrec-4</string>
+    <string name="glo_en_mrec5">/14309701/and-en/global/and-en.global.mrec-5</string>
+    <string name="glo_en_mrec6">/14309701/and-en/global/and-en.global.mrec-6</string>
+    <string name="glo_en_mrec7">/14309701/and-en/global/and-en.global.mrec-7</string>
+    <!--Ends here -->
+
+    <!-- Ad units for English Economy Page -->
+    <string name="eco_en_mrec1">/14309701/and-en/economy/and-en.economy.mrec-1</string>
+    <string name="eco_en_mrec2">/14309701/and-en/economy/and-en.economy.mrec-2</string>
+    <string name="eco_en_mrec3">/14309701/and-en/economy/and-en.economy.mrec-3</string>
+    <string name="eco_en_mrec4">/14309701/and-en/economy/and-en.economy.mrec-4</string>
+    <string name="eco_en_mrec5">/14309701/and-en/economy/and-en.economy.mrec-5</string>
+    <string name="eco_en_mrec6">/14309701/and-en/economy/and-en.economy.mrec-6</string>
+    <string name="eco_en_mrec7">/14309701/and-en/economy/and-en.economy.mrec-7</string>
+    <!--Ends here -->
+
+
+    <!-- Ad units for English Sports Page -->
+    <string name="spo_en_mrec1">/14309701/and-en/sports/and-en.sports.mrec-1</string>
+    <string name="spo_en_mrec2">/14309701/and-en/sports/and-en.sports.mrec-2</string>
+    <string name="spo_en_mrec3">/14309701/and-en/sports/and-en.sports.mrec-3</string>
+    <string name="spo_en_mrec4">/14309701/and-en/sports/and-en.sports.mrec-4</string>
+    <string name="spo_en_mrec5">/14309701/and-en/sports/and-en.sports.mrec-5</string>
+    <string name="spo_en_mrec6">/14309701/and-en/sports/and-en.sports.mrec-6</string>
+    <string name="spo_en_mrec7">/14309701/and-en/sports/and-en.sports.mrec-7</string>
+    <!--Ends here -->
+
+    <!-- Ad units for English Entertainment Page -->
+    <string name="ent_en_mrec1">/14309701/and-en/entertainment/and-en.entertainment.mrec-1</string>
+    <string name="ent_en_mrec2">/14309701/and-en/entertainment/and-en.entertainment.mrec-2</string>
+    <string name="ent_en_mrec3">/14309701/and-en/entertainment/and-en.entertainment.mrec-3</string>
+    <string name="ent_en_mrec4">/14309701/and-en/entertainment/and-en.entertainment.mrec-4</string>
+    <string name="ent_en_mrec5">/14309701/and-en/entertainment/and-en.entertainment.mrec-5</string>
+    <string name="ent_en_mrec6">/14309701/and-en/entertainment/and-en.entertainment.mrec-6</string>
+    <string name="ent_en_mrec7">/14309701/and-en/entertainment/and-en.entertainment.mrec-7</string>
+    <!--Ends here -->
+
+    <!-- Ad units for English Editors Choice Page -->
+    <string name="editor_en_mrec1">/14309701/and-en/editorschoice/and-en.editorschoice.mrec-1</string>
+    <string name="editor_en_mrec2">/14309701/and-en/editorschoice/and-en.editorschoice.mrec-2</string>
+    <string name="editor_en_mrec3">/14309701/and-en/editorschoice/and-en.editorschoice.mrec-3</string>
+    <string name="editor_en_mrec4">/14309701/and-en/editorschoice/and-en.editorschoice.mrec-4</string>
+    <string name="editor_en_mrec5">/14309701/and-en/editorschoice/and-en.editorschoice.mrec-5</string>
+    <string name="editor_en_mrec6">/14309701/and-en/editorschoice/and-en.editorschoice.mrec-6</string>
+    <string name="editor_en_mrec7">/14309701/and-en/editorschoice/and-en.editorschoice.mrec-7</string>
+    <!--Ends here -->
+
+    <!-- Ad units for English TVShows Page -->
+    <string name="tvshows_en_lb_btf">/14309701/app4</string>
+    <string name="tvshows_det_en_mrec">/14309701/and-en/programs/and-en.programs-det.mrec</string>
+    <string name="tvshows_en_mrec1">/14309701/and-en/programs/and-en.programs.mrec-1</string>
+    <string name="tvshows_en_mrec2">/14309701/and-en/programs/and-en.programs.mrec-2</string>
+    <string name="tvshows_en_mrec3">/14309701/and-en/programs/and-en.programs.mrec-3</string>
+    <string name="tvshows_en_mrec4">/14309701/and-en/programs/and-en.programs.mrec-4</string>
+    <string name="tvshows_en_mrec5">/14309701/and-en/programs/and-en.programs.mrec-5</string>
+    <string name="tvshows_en_mrec6">/14309701/and-en/programs/and-en.programs.mrec-6</string>
+    <string name="tvshows_en_mrec7">/14309701/and-en/programs/and-en.programs.mrec-7</string>
+    <!--Ends here -->
+
+    <!-- Ad units for English Blogs Page -->
+    <string name="blogs_en_mrec1">/14309701/and-en/blogs/and-en.blogs.mrec-1</string>
+    <string name="blogs_en_mrec2">/14309701/and-en/blogs/and-en.blogs.mrec-2</string>
+    <string name="blogs_en_mrec3">/14309701/and-en/blogs/and-en.blogs.mrec-3</string>
+    <string name="blogs_en_mrec4">/14309701/and-en/blogs/and-en.blogs.mrec-4</string>
+    <!--Ends here -->
+
+
+    <!-- Ad units for Urdu News -->
+
+
+    <!-- Ad units for Urdu Interstitial -->
+    <string name="interstitial_unit_id_urd">/14309701/and-ur/and-ur.interstitial</string>
+
+    <!-- Ad units for Urdu Live Page -->
+    <string name="live_ur_mrec1">/14309701/and-ur/live/and-ur.live.mrec-1</string>
+    <string name="live_ur_mrec2">/14309701/and-ur/live/and-ur.live.mrec-2</string>
+    <string name="live_ur_mrec3">/14309701/and-ur/live/and-ur.live.mrec-3</string>
+    <!--Ends here -->
+
+    <!-- Ad units for Urdu Home Page -->
+    <string name="home_ur_lb_atf">/14309701/app4</string>
+    <string name="home_ur_mrec1">/14309701/and-ur/home/and-ur.home.mrec-1</string>
+    <string name="home_ur_mrec2">/14309701/and-ur/home/and-ur.home.mrec-2</string>
+    <string name="home_ur_mrec3">/14309701/and-ur/home/and-ur.home.mrec-3</string>
+    <!--Ends here -->
+
+    <!-- Ad units for Urdu MyNews Page -->
+    <string name="mynews_ur_mrec1">/14309701/and-ur/mynews/and-ur.mynews.mrec-1</string>
+    <string name="mynews_ur_mrec2">/14309701/and-ur/mynews/and-ur.mynews.mrec-2</string>
+    <string name="mynews_ur_mrec3">/14309701/and-ur/mynews/and-ur.mynews.mrec-3</string>
+    <string name="mynews_ur_mrec4">/14309701/and-ur/mynews/and-ur.mynews.mrec-4</string>
+    <!--Ends here -->
+
+    <!-- Ad units for Urdu Pakistan Page -->
+    <string name="pak_ur_mrec1">/14309701/and-ur/pakistan/and-ur.pakistan.mrec-1</string>
+    <string name="pak_ur_mrec2">/14309701/and-ur/pakistan/and-ur.pakistan.mrec-2</string>
+    <string name="pak_ur_mrec3">/14309701/and-ur/pakistan/and-ur.pakistan.mrec-3</string>
+    <string name="pak_ur_mrec4">/14309701/and-ur/pakistan/and-ur.pakistan.mrec-4</string>
+    <string name="pak_ur_mrec5">/14309701/and-ur/pakistan/and-ur.pakistan.mrec-5</string>
+    <string name="pak_ur_mrec6">/14309701/and-ur/pakistan/and-ur.pakistan.mrec-6</string>
+    <string name="pak_ur_mrec7">/14309701/and-ur/pakistan/and-ur.pakistan.mrec-7</string>
+    <!--Ends here -->
+
+    <!-- Ad units for Urdu Global Page -->
+    <string name="glo_ur_mrec1">/14309701/and-ur/global/and-ur.global.mrec-1</string>
+    <string name="glo_ur_mrec2">/14309701/and-ur/global/and-ur.global.mrec-2</string>
+    <string name="glo_ur_mrec3">/14309701/and-ur/global/and-ur.global.mrec-3</string>
+    <string name="glo_ur_mrec4">/14309701/and-ur/global/and-ur.global.mrec-4</string>
+    <string name="glo_ur_mrec5">/14309701/and-ur/global/and-ur.global.mrec-5</string>
+    <string name="glo_ur_mrec6">/14309701/and-ur/global/and-ur.global.mrec-6</string>
+    <string name="glo_ur_mrec7">/14309701/and-ur/global/and-ur.global.mrec-7</string>
+    <!--Ends here -->
+
+    <!-- Ad units for Urdu Economy Page -->
+    <string name="eco_ur_mrec1">/14309701/and-ur/economy/and-ur.economy.mrec-1</string>
+    <string name="eco_ur_mrec2">/14309701/and-ur/economy/and-ur.economy.mrec-2</string>
+    <string name="eco_ur_mrec3">/14309701/and-ur/economy/and-ur.economy.mrec-3</string>
+    <string name="eco_ur_mrec4">/14309701/and-ur/economy/and-ur.economy.mrec-4</string>
+    <string name="eco_ur_mrec5">/14309701/and-ur/economy/and-ur.economy.mrec-5</string>
+    <string name="eco_ur_mrec6">/14309701/and-ur/economy/and-ur.economy.mrec-6</string>
+    <string name="eco_ur_mrec7">/14309701/and-ur/economy/and-ur.economy.mrec-7</string>
+    <!--Ends here -->
+
+
+    <!-- Ad units for Urdu Sports Page -->
+    <string name="spo_ur_mrec1">/14309701/and-ur/sports/and-ur.sports.mrec-1</string>
+    <string name="spo_ur_mrec2">/14309701/and-ur/sports/and-ur.sports.mrec-2</string>
+    <string name="spo_ur_mrec3">/14309701/and-ur/sports/and-ur.sports.mrec-3</string>
+    <string name="spo_ur_mrec4">/14309701/and-ur/sports/and-ur.sports.mrec-4</string>
+    <string name="spo_ur_mrec5">/14309701/and-ur/sports/and-ur.sports.mrec-5</string>
+    <string name="spo_ur_mrec6">/14309701/and-ur/sports/and-ur.sports.mrec-6</string>
+    <string name="spo_ur_mrec7">/14309701/and-ur/sports/and-ur.sports.mrec-7</string>
+    <!--Ends here -->
+
+    <!-- Ad units for Urdu Entertainment Page -->
+    <string name="ent_ur_mrec1">/14309701/and-ur/entertainment/and-ur.entertainment.mrec-1</string>
+    <string name="ent_ur_mrec2">/14309701/and-ur/entertainment/and-ur.entertainment.mrec-2</string>
+    <string name="ent_ur_mrec3">/14309701/and-ur/entertainment/and-ur.entertainment.mrec-3</string>
+    <string name="ent_ur_mrec4">/14309701/and-ur/entertainment/and-ur.entertainment.mrec-4</string>
+    <string name="ent_ur_mrec5">/14309701/and-ur/entertainment/and-ur.entertainment.mrec-5</string>
+    <string name="ent_ur_mrec6">/14309701/and-ur/entertainment/and-ur.entertainment.mrec-6</string>
+    <string name="ent_ur_mrec7">/14309701/and-ur/entertainment/and-ur.entertainment.mrec-7</string>
+    <!--Ends here -->
+
+    <!-- Ad units for Urdu Editors Choice Page -->
+    <string name="editor_ur_mrec1">/14309701/and-ur/editorschoice/and-ur.editorschoice.mrec-1</string>
+    <string name="editor_ur_mrec2">/14309701/and-ur/editorschoice/and-ur.editorschoice.mrec-2</string>
+    <string name="editor_ur_mrec3">/14309701/and-ur/editorschoice/and-ur.editorschoice.mrec-3</string>
+    <string name="editor_ur_mrec4">/14309701/and-ur/editorschoice/and-ur.editorschoice.mrec-4</string>
+    <string name="editor_ur_mrec5">/14309701/and-ur/editorschoice/and-ur.editorschoice.mrec-5</string>
+    <string name="editor_ur_mrec6">/14309701/and-ur/editorschoice/and-ur.editorschoice.mrec-6</string>
+    <string name="editor_ur_mrec7">/14309701/and-ur/editorschoice/and-ur.editorschoice.mrec-7</string>
+    <!--Ends here -->
+
+    <!-- Ad units for Urdu Blogs Page -->
+    <string name="blogs_ur_mrec1">/14309701/and-ur/blogs/and-ur.blogs.mrec-1</string>
+    <string name="blogs_ur_mrec2">/14309701/and-ur/blogs/and-ur.blogs.mrec-2</string>
+    <string name="blogs_ur_mrec3">/14309701/and-ur/blogs/and-ur.blogs.mrec-3</string>
+    <string name="blogs_ur_mrec4">/14309701/and-ur/blogs/and-ur.blogs.mrec-4</string>
+    <!--Ends here -->
+    <string name="facebook_app_id">1501535160083157</string>
+
+    <string-array name="pref_language">
+        <item>Urdu</item>
+        <item>English</item>
+    </string-array>
+    <string name="title_activity_etail_activity__popular_videos">etailActivity_PopularVideos
+    </string>
+    <string name="title_activity_detail_activity__more_blogs">DetailActivity_MoreBlogs</string>
+    <string name="title_activity_editor_video_jw">EditorVideoJW</string>
+    <string name="title_activity_ads">AdsActivity</string>
+    <string name="title_activity_ads_activity_urdu">AdsActivityUrdu</string>
+
+    <string name="Live">Live</string>
+    <string name="Home">Home</string>
+    <string name="MyNews">My News</string>
+    <string name="Pakistan">Pakistan</string>
+    <string name="Global">Global</string>
+    <string name="Economy">Economy</string>
+    <string name="Sports">Sports</string>
+    <string name="Entertainment">Entertainment</string>
+    <string name="Editor">Editor</string>
+    <string name="TVShows">TV Shows</string>
+    <string name="Blogs">Blogs</string>
+    <string name="More">More</string>
+    <string name="Settings">Settings</string>
+    <string name="ShareApp">Share App</string>
+
+
+    <string name="LiveUrdu">لائیو دیکھئے</string>
+    <string name="HomeUrdu">ہوم</string>
+    <string name="MyNewsUrdu">میری خبریں</string>
+    <string name="PakistanUrdu">پاکستان نیوز</string>
+    <string name="GlobalUrdu">ورلڈ نیوز</string>
+    <string name="EconomyUrdu">بزنس نیوز</string>
+    <string name="SportsUrdu">کھیل نیوز</string>
+    <string name="EntertainmentUrdu">اینٹرٹینمنٹ نیوز</string>
+    <string name="EditorUrdu">ایڈیٹرز چوائس</string>
+    <string name="TVShowsUrdu">ٹی وی شوز</string>
+    <string name="BlogsUrdu">بلاگز</string>
+    <string name="MoreUrdu">مزيد</string>
+    <string name="SettingsUrdu">سیٹنگز</string>
+    <string name="ShareAppUrdu">شئیر</string>
+
+
+</resources>

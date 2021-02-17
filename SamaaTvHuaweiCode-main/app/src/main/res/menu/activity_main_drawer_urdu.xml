@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  <item
+          android:id="@+id/nav_camera"
+          android:icon="@drawable/ic_menu_camera"
+          android:title="Import" />-->
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_live"
+
+            android:title="لائیو دیکھئے"
+
+            />
+        <item
+            android:id="@+id/nav_trend"
+
+            android:title="ہوم"
+
+            />
+
+        <item
+            android:id="@+id/nav_mynews"
+
+            android:title="میری خبریں"
+
+            />
+        <item
+            android:id="@+id/nav_pak"
+
+            android:title="پاکستان نیوز"
+
+            />
+
+        <item
+            android:id="@+id/nav_glo"
+
+            android:title="ورلڈ نیوز"/>
+        <item
+            android:id="@+id/nav_eco"
+
+            android:title="بزنس نیوز"/>
+        <item
+            android:id="@+id/nav_sport"
+
+            android:title="کھیل نیوز"/>
+        <item
+            android:id="@+id/nav_enter"
+
+            android:title="اینٹرٹینمنٹ نیوز"/>
+        <item
+            android:id="@+id/nav_editor"
+
+            android:title="ایڈیٹرز چوائس"/>
+
+        <item
+            android:id="@+id/nav_tvshows"
+
+            android:title="ٹی وی شوز"/>
+
+        <item
+            android:id="@+id/nav_blog"
+
+            android:title="بلاگز"/>
+
+        <item
+            android:id="@+id/nav_more"
+
+            android:title="مزيد"/>
+    </group>
+
+    <item android:title="سیٹنگز">
+        <menu>
+
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@android:drawable/ic_menu_preferences"
+                android:title="سیٹنگز"/>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="شئیر"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,355 @@
+<RelativeLayout
+    android:id="@+id/parent_view"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeMoreContainer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <com.google.android.gms.ads.doubleclick.PublisherAdView
+                android:id="@+id/ad_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_bus"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                ads:adSize="MEDIUM_RECTANGLE"
+                ads:adUnitId="@string/home_en_mrec3"/>
+
+            <LinearLayout
+                android:id="@+id/framehealth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/White"
+                android:gravity="start"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/health_head1"
+                    style="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="5dp"
+                    android:text="HEALTH"
+                    android:textColor="@color/heading1_black"
+                    android:textSize="40sp"/>
+
+                <TextView
+                    android:id="@+id/health_head2"
+                    style="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="NEWS"
+                    android:textColor="@color/heading2_black"
+                    android:textSize="40sp"/>
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="3dp"
+
+                />
+
+
+            <LinearLayout
+                android:id="@+id/framelife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/White"
+                android:gravity="start"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/life_head1"
+                    style="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="5dp"
+                    android:text="LIFE STYLE"
+                    android:textColor="@color/heading1_black"
+                    android:textSize="40sp"/>
+
+                <TextView
+                    android:id="@+id/life_head2"
+                    style="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="NEWS"
+                    android:textColor="@color/heading2_black"
+                    android:textSize="40sp"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_lifestyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/framesocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/White"
+                android:gravity="start"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/social_head1"
+                    style="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="5dp"
+                    android:text="SOCIAL BUZZ"
+                    android:textColor="@color/heading1_black"
+                    android:textSize="40sp"/>
+
+                <TextView
+                    android:id="@+id/social_head2"
+                    style="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="NEWS"
+                    android:textColor="@color/heading2_black"
+                    android:textSize="40sp"/>
+
+            </LinearLayout>
+            <!--  Recycler View  -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_socialbuzz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/framesci"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/White"
+                android:gravity="start"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/sci_head1"
+                    style="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="5dp"
+                    android:text="SCI TECH"
+                    android:textColor="@color/heading1_black"
+                    android:textSize="40sp"/>
+
+                <TextView
+                    android:id="@+id/sci_head2"
+                    style="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="NEWS"
+                    android:textColor="@color/heading2_black"
+                    android:textSize="40sp"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_scitech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/framesci"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/frameweird"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/White"
+                android:gravity="start"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/weird_head1"
+                    style="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="5dp"
+                    android:text="WEIRD"
+                    android:textColor="@color/heading1_black"
+                    android:textSize="40sp"/>
+
+                <TextView
+                    android:id="@+id/weird_head2"
+                    style="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="NEWS"
+                    android:textColor="@color/heading2_black"
+                    android:textSize="40sp"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_weird"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frameweird"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <FrameLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ad_view3"
+                android:background="@color/appfooter_color">
+
+
+                <TextView
+                    android:id="@+id/footer_head1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/copyright_samaatv"
+                    android:textColor="@color/White"
+                    android:textSize="22sp"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/more_list_lyout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_health"
+            android:layout_width="160dp"
+            android:layout_height="64dp"
+            android:background="#112A6F"
+            android:gravity="center"
+            android:text="Health"
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_life"
+            android:layout_width="160dp"
+            android:layout_height="64dp"
+            android:background="#112A6F"
+            android:gravity="center"
+            android:text="Life Style"
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_social"
+            android:layout_width="160dp"
+            android:layout_height="64dp"
+            android:background="#112A6F"
+            android:gravity="center"
+            android:text="Social Buzz"
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_sci"
+            android:layout_width="160dp"
+            android:layout_height="64dp"
+            android:background="#112A6F"
+            android:gravity="center"
+            android:text="Science"
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_weird"
+            android:layout_width="160dp"
+            android:layout_height="64dp"
+            android:background="#112A6F"
+            android:gravity="center"
+            android:text="Weird"
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

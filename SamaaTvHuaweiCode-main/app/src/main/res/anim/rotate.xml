@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Blink Animation  -->
+    <!--<alpha android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:duration="600"
+        android:repeatMode="reverse"
+        android:repeatCount="5"/> -->
+
+    <!-- Fade Animation  -->
+
+    <alpha
+        android:duration="1000"
+        android:fromAlpha="0"
+        android:toAlpha="1">
+    </alpha>
+
+    <alpha
+        android:duration="1000"
+        android:fromAlpha="1"
+        android:startOffset="1000"
+        android:toAlpha="0">
+    </alpha>
+</set>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "917666663799",
+    "firebase_url": "https://fir-ios-app.firebaseio.com",
+    "project_id": "fir-ios-app",
+    "storage_bucket": "fir-ios-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917666663799:android:093a1e512fcd4376",
+        "android_client_info": {
+          "package_name": "com.Samaatv.samaaapp3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917666663799-g1vljfenh31nh4vjjsou2t0cjsbi8cs3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZU-pSIyOGKv_gDEFmLl0TAUFM_4eNHzU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

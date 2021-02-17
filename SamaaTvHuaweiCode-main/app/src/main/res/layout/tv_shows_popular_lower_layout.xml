@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardPreventCornerOverlap="false"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_new"
+            android:layout_toRightOf="@+id/img_new"
+
+            android:background="#FFF"
+            android:orientation="vertical">
+
+
+            <ImageView
+
+                android:id="@+id/img_new"
+                android:layout_width="130sp"
+                android:layout_height="80sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginRight="10sp"
+                android:scaleType="fitXY"
+                />
+
+            <ImageView
+                android:id="@+id/playicon_new"
+                android:layout_width="130sp"
+                android:layout_height="80sp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="false"
+                android:src="@drawable/play_button"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/title_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/img_new"
+                android:layout_toRightOf="@+id/img_new"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="TITLE"
+                android:textColor="@color/item_black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/date_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/title_new"
+
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/img_new"
+                android:layout_toRightOf="@+id/img_new"
+                android:gravity="start"
+                android:text="sdfsd"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/cate_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_new"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="38dp"
+                android:layout_toEndOf="@+id/date_new"
+                android:layout_toRightOf="@+id/date_new"
+                android:gravity="left"
+                android:text="category"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+
+                android:id="@+id/ad_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/date_new"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

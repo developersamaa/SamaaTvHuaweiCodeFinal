@@ -1,0 +1,532 @@
+<RelativeLayout
+    android:id="@+id/parent_view"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <!--<android.support.v7.widget.CardView-->
+                <!--android:id="@+id/card_view1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/trend_head"-->
+                <!--android:layout_marginBottom="@dimen/activity_horizontal_margin"-->
+                <!--card_view:cardCornerRadius="0dp"-->
+                <!--card_view:cardElevation="3dp"-->
+                <!--android:foreground="?android:attr/selectableItemBackground">-->
+
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:background="@android:color/white"-->
+                <!--&gt;-->
+
+                <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="250dp"-->
+                <!--android:id="@+id/Framelayout"-->
+                <!--&gt;-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/img_trend"-->
+                <!--android:src="@drawable/logo_samaatv"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scaleType="fitXY" />-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/play_vdo"-->
+                <!--android:src="@drawable/play_button"-->
+                <!--android:adjustViewBounds="false"-->
+                <!--android:layout_gravity="center"-->
+
+                <!--/>-->
+
+
+                <!--</FrameLayout>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/title_trend"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/Framelayout"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Headline"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                <!--android:text="TITLE"-->
+                <!--android:maxLines="2"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginTop="10dp" />-->
+
+
+                <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:contentDescription="news"-->
+                <!--android:src="@drawable/time"-->
+                <!--android:id="@+id/time_icon"-->
+                <!--android:layout_alignTop="@+id/date_trend"-->
+
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_marginLeft="10dp" />-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/date_trend"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_below="@+id/title_trend"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textSize="@dimen/font_body"-->
+                <!--android:text="date"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginStart="20dp"/>-->
+                <!--</RelativeLayout>-->
+
+
+                <!--</android.support.v7.widget.CardView>-->
+
+
+                <TextView
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="gone"/>
+
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/framepak"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/pakistan_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="PAKISTAN"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/pakistan_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="NEWS"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <RelativeLayout
+                    android:id="@+id/home_ad_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_pak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="3dp"
+
+                    />
+
+                <!--<TextView-->
+                <!--android:id="@+id/more_pak"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/list_pak"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                <!--android:text="MORE NEWS FROM PAKISTAN"-->
+                <!--android:textColor="@color/blue"-->
+                <!--android:textSize="@dimen/font_body" />-->
+
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/frameglo"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/global_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="GLOBAL"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/global_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="NEWS"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_glo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <!--<TextView-->
+                <!--android:id="@+id/more_glo"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_below="@+id/list_glo"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textSize="@dimen/font_body"-->
+                <!--android:text="MORE NEWS FROM GLOBAL"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="@color/blue"-->
+                <!--android:layout_marginBottom="5dp" />-->
+
+                <com.google.android.gms.ads.doubleclick.PublisherAdView
+                    android:id="@+id/ad_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    ads:adSize="MEDIUM_RECTANGLE"
+                    ads:adUnitId="@string/home_en_mrec1"
+                    />
+
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/frameedit"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/editor_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="EDITOR'S"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/editor_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="CHOICE"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+                <!--  Recycler View  -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/editor_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <!--<TextView-->
+                <!--android:id="@+id/more_edit"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_below="@+id/editor_view"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textSize="@dimen/font_body"-->
+                <!--android:text="MORE NEWS FROM EDITORS CHOICE"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="@color/blue"-->
+                <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/framesports"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/sports_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="SPORTS"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/sports_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="NEWS"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_spo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+
+                    />
+
+                <!--<TextView-->
+                <!--android:id="@+id/more_sport"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_below="@+id/list_spo"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textSize="@dimen/font_body"-->
+                <!--android:text="MORE NEWS FROM SPORTS"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="@color/blue"-->
+                <!--android:layout_marginBottom="5dp" />-->
+
+
+                <com.google.android.gms.ads.doubleclick.PublisherAdView
+                    android:id="@+id/ad_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    ads:adSize="MEDIUM_RECTANGLE"
+                    ads:adUnitId="@string/home_en_mrec2"
+                    />
+
+                <!--<LinearLayout-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/frameenter"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/enter_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="ENTERTAINMENT"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/enter_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="NEWS"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_enter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+
+                    />
+
+                <!--<TextView-->
+                <!--android:id="@+id/more_enter"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_below="@+id/list_enter"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textSize="@dimen/font_body"-->
+                <!--android:text="MORE NEWS FROM ENTERTAINMENT"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="@color/blue"-->
+                <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/framebus"-->
+                <!--android:background="@color/White"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:gravity="start">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/bus_head1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="ECONOMY"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading1_black"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginStart="5dp"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/bus_head2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="NEWS"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Display1"-->
+                <!--android:textColor="@color/heading2_black"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginStart="5dp"/>-->
+
+                <!--</LinearLayout>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+
+                    />
+
+                <!--<TextView-->
+                <!--android:id="@+id/more_bus"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_below="@+id/list_bus"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textSize="@dimen/font_body"-->
+                <!--android:text="MORE NEWS FROM ECONOMY"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="@color/blue"-->
+                <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<com.google.android.gms.ads.doubleclick.PublisherAdView-->
+                <!--android:id="@+id/ad_view3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/list_bus"-->
+                <!--ads:adSize="MEDIUM_RECTANGLE"-->
+                <!--ads:adUnitId="@string/home_en_mrec3"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--/>-->
+
+                <FrameLayout
+                    android:id="@+id/footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/appfooter_color"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/footer_head1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|top"
+                        android:layout_marginBottom="2dp"
+                        android:text="@string/copyright_samaatv"
+                        android:textColor="@color/White"
+                        android:textSize="12sp"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
